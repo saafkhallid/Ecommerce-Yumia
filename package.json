@@ -1,0 +1,36 @@
+{
+  "name": "ecommerce-yumia",
+  "version": "1.0.0",
+  "description": "On vous a confié les tâches de réaliser les fonctionnalités de base de la marketplace Yumia.\r On fait, la marketplace Yumia permettra \r •\tAux différents vendeurs (autoentrepreneurs ou entreprises) de :\r o\tEntrer les informations des produits à vendre dans la plateforme (image, quantité, fiche technique, catégorie, prix HT, prix TTC).\r o\tVoir les commandes passées par le client.\r o\tDispatcher les commandes sur les livreurs.\r •\tAux livreurs de :\r o\tConsulter les livraisons.\r o\tRenseigner l’état d’une livraison (livrée, rejeté, en attente état par défaut)\r •\tA l’internaute de\r o\tConsulter les produits par catégorie, trier par prix ascendants ou descendants, par ordre alphabétique ascendants ou descendants, filtrer par prix.\r o\tAjouter des produits aux paniers,\r o\tPasser une commande, soit en mode visiteur ou bien en mode utilisateur ayant un compte crée.\r •\tAux l’administrateur du site de :\r o\tCréer les comptes des vendeurs, livreurs.\r Veillez au fait que le site soit convivial.\r Elaborer un site en respectant les règles de l’art du développement informatiques.\r Environnement technique :  la famille MERN stack, Stripe, JWT, Joi.\r Vous pouvez travailler le site avec des technologies équivalentes à celles mentionnés en hauts.\r A l’instar de mongodb au lieu de mongoose.",
+  "main": "server.js",
+  "scripts": {
+    "start ": "node backend/server.js",
+    "server ": "nodemon  backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seederScript"
+
+
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saafkhallid/Ecommerce-Yumia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saafkhallid/Ecommerce-Yumia/issues"
+  },
+  "homepage": "https://github.com/saafkhallid/Ecommerce-Yumia#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
